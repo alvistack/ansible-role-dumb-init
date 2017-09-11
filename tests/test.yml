@@ -32,4 +32,4 @@
       shell: |
         dumb-init --help
       register: dumb_init_help_result
-      changed: dumb_init_help_result.rc != 0
+      changed_when: dumb_init_help_result.rc != 0
