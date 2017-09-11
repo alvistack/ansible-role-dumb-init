@@ -24,3 +24,12 @@
   remote_user: root
   roles:
     - role: ansible-role-dumb-init
+
+- hosts: all
+  remote_user: root
+  tasks:
+    - name: dumb-init --help
+      shell: |
+        dumb-init --help
+      register: dumb_init_help_result
+      changed: dumb_init_help_result.rc != 0
