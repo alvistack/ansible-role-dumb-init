@@ -14,6 +14,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_get_url: [
-  { url: "https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64", dest: "/usr/bin/dumb-init", owner: "root", group: "root", mode: "0755" },
-]
+_dumb_init_archive_url: "https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64"
