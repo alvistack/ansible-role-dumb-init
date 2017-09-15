@@ -30,6 +30,7 @@ Example Playbook
     - hosts: all
       roles:
         - role: dumb-init
+          dumb_init_dest: "/usr/local/bin"
 
 License
 -------

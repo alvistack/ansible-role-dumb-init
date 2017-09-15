@@ -14,11 +14,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+- name: prepare file
+  file:
+    dest: "{{ dumb_init_dest }}"
+    state: "directory"
+  tags: dumb-init
+
 - name: download archive
   get_url:
-    url: "{{ _dumb_init_archive_url }}"
-    dest: "/usr/bin/dumb-init"
-    owner: "root"
-    group: "root"
+    url: "{{ dumb_init_archive_url }}"
+    dest: "{{ dumb_init_dest }}"
+    owner: "{{ dumb_init_owner }}"
+    group: "{{ dumb_init_group }}"
     mode: "0755"
   tags: dumb-init
