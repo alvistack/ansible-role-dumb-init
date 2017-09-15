@@ -45,7 +45,7 @@ Role Variables
 <tr class="even">
 <td>dumb_init_dest</td>
 <td>yes</td>
-<td><code>/usr/binn/dumb-init</code></td>
+<td><code>/usr/bin/dumb-init</code></td>
 <td></td>
 <td>Absolute path of where to download the file to</td>
 </tr>
