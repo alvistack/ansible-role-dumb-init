@@ -36,7 +36,7 @@ Role Variables
 </thead>
 <tbody>
 <tr class="odd">
-<td>dumb_init_archive_url</td>
+<td>dumb_init_url</td>
 <td>yes</td>
 <td><code>https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64</code></td>
 <td></td>

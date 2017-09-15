@@ -16,7 +16,7 @@
 
 - name: download archive
   get_url:
-    url: "{{ dumb_init_archive_url }}"
+    url: "{{ dumb_init_url }}"
     dest: "{{ dumb_init_dest }}"
     owner: "{{ dumb_init_owner }}"
     group: "{{ dumb_init_group }}"
