@@ -40,28 +40,35 @@ Role Variables
 <td>yes</td>
 <td><code>https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64</code></td>
 <td></td>
-<td>URL for download dumb-init binary.</td>
+<td>URL for download dumb-init binary</td>
 </tr>
 <tr class="even">
 <td>dumb_init_dest</td>
 <td>yes</td>
 <td><code>/usr/binn/dumb-init</code></td>
 <td></td>
-<td>Destination filename for dumt-init</td>
+<td>Absolute path of where to download the file to</td>
 </tr>
 <tr class="odd">
 <td>dumb_init_group</td>
 <td>yes</td>
 <td><code>root</code></td>
 <td></td>
-<td>Group of dumt-init belongs to</td>
+<td>Name of the group that should own the file</td>
 </tr>
 <tr class="even">
+<td>dumb_init_mode</td>
+<td>yes</td>
+<td><code>0755</code></td>
+<td></td>
+<td>Mode the file should be</td>
+</tr>
+<tr class="odd">
 <td>dumb_init_owner</td>
 <td>yes</td>
 <td><code>root</code></td>
 <td></td>
-<td>Owner of dumt-init belongs to</td>
+<td>Name of the user that should own the file</td>
 </tr>
 </tbody>
 </table>

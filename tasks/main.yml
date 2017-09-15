@@ -20,5 +20,5 @@
     dest: "{{ dumb_init_dest }}"
     owner: "{{ dumb_init_owner }}"
     group: "{{ dumb_init_group }}"
-    mode: "0755"
+    mode: "{{ dumb_init_mode }}"
   tags: dumb-init
