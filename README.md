@@ -17,7 +17,54 @@ This role was designed for Ubuntu 16.04/14.04 and CentOS 7/6.
 Role Variables
 --------------
 
-No additional role variables.
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>parameter</th>
+<th>required</th>
+<th>default</th>
+<th>choices</th>
+<th>comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>dumb_init_archive_url</td>
+<td>yes</td>
+<td><code>https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64</code></td>
+<td></td>
+<td>URL for download dumb-init binary.</td>
+</tr>
+<tr class="even">
+<td>dumb_init_dest</td>
+<td>yes</td>
+<td><code>/usr/binn/dumb-init</code></td>
+<td></td>
+<td>Destination filename for dumt-init</td>
+</tr>
+<tr class="odd">
+<td>dumb_init_group</td>
+<td>yes</td>
+<td><code>root</code></td>
+<td></td>
+<td>Group of dumt-init belongs to</td>
+</tr>
+<tr class="even">
+<td>dumb_init_owner</td>
+<td>yes</td>
+<td><code>root</code></td>
+<td></td>
+<td>Owner of dumt-init belongs to</td>
+</tr>
+</tbody>
+</table>
 
 Dependencies
 ------------
@@ -30,7 +77,7 @@ Example Playbook
     - hosts: all
       roles:
         - role: dumb-init
-          dumb_init_dest: "/usr/local/bin"
+          dumb_init_dest: "/usr/local/bin/dumb-init"
 
 License
 -------
