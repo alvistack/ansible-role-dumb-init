@@ -23,7 +23,7 @@
 - name: download archive
   get_url:
     url: "{{ dumb_init_archive_url }}"
-    dest: "{{ dumb_init_dest }}"
+    dest: "{{ dumb_init_dest }}/dumb-init"
     owner: "{{ dumb_init_owner }}"
     group: "{{ dumb_init_group }}"
     mode: "0755"
