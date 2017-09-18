@@ -4,7 +4,7 @@ Ansible Role for dumb-init
 [![Build Status](https://travis-ci.org/alvistack/ansible-role-dumb-init.svg?branch=master)](https://travis-ci.org/alvistack/ansible-role-dumb-init)
 [![GitHub tag](https://img.shields.io/github/tag/alvistack/ansible-role-dumb-init.svg)](https://github.com/alvistack/ansible-role-dumb-init)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-dumb-init.svg)](https://github.com/alvistack/ansible-role-dumb-init/blob/master/LICENSE)
-[![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.dumb-init-blue.svg)](https://galaxy.ansible.com/alvistack/dumb-init)
+[![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.dumb--init-blue.svg)](https://galaxy.ansible.com/alvistack/dumb-init)
 
 Ansible Role for Yelp dumb-init Installation.
 
