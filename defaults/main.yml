@@ -14,8 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dumb_init_dest: "/usr/bin/dumb-init"
+# Owner, group and mode of dumb-init.
+dumb_init_owner: "root"
 dumb_init_group: "root"
 dumb_init_mode: "0755"
-dumb_init_owner: "root"
+
+# Absolute path of where dumb-init should download to.
+dumb_init_dest: "/usr/bin/dumb-init"
+
+# URL for download dumb-init binary.
 dumb_init_url: "https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64"
