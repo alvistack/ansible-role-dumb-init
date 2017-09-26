@@ -28,10 +28,7 @@ Dependencies
 Example Playbook
 ----------------
 
-    - hosts: all
-      roles:
-        - role: dumb-init
-          dumb_init_dest: "/usr/local/bin/dumb-init"
+[tests/test.yml](tests/test.yml)
 
 License
 -------
