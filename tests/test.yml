@@ -38,6 +38,14 @@
 - hosts: all
   remote_user: root
   tasks:
+    - name: ls -la /usr/bin/dumb-init
+      file:
+        path: "/usr/bin/dumb-init"
+        state: "file"
+        owner: "root"
+        group: "root"
+        mode: "0755"
+
     - name: dumb-init --help
       shell: |
         dumb-init --help
