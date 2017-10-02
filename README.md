@@ -1,7 +1,7 @@
 Ansible Role for dumb-init
 ==========================
 
-[![Build Status](https://travis-ci.org/alvistack/ansible-role-dumb-init.svg?branch=master)](https://travis-ci.org/alvistack/ansible-role-dumb-init)
+[![Travis](https://img.shields.io/travis/alvistack/ansible-role-dumb-init.svg)](https://travis-ci.org/alvistack/ansible-role-dumb-init)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-dumb-init.svg)](https://github.com/alvistack/ansible-role-dumb-init)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-dumb-init.svg)](https://github.com/alvistack/ansible-role-dumb-init/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.dumb--init-blue.svg)](https://galaxy.ansible.com/alvistack/dumb-init)
