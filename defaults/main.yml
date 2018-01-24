@@ -23,4 +23,4 @@ dumb_init_mode: "0755"
 dumb_init_dest: "/usr/bin/dumb-init"
 
 # URL for download dumb-init binary.
-dumb_init_url: "https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64"
+dumb_init_url: "https://github.com/Yelp/dumb-init/releases/download/v1.2.1/dumb-init_1.2.1_amd64"
