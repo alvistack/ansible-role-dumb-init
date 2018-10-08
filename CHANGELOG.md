@@ -6,7 +6,10 @@ Ansible Role for dumb-init
 
 ### Major Changes
 
--   Add Ubuntu 17.10 and 18.04 support
+-   Upgrade dumb-init to v1.2.2
+-   Upgrade Ansible support to 2.6 or higher
+-   Remove Ubuntu 14.04 support
+-   Add Ubuntu 18.04 support
 
 1.1.0 - 2017-11-23
 ------------------
