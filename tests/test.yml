@@ -26,24 +26,10 @@
   remote_user: root
   roles:
     - role: dumb-init
-      # Owner, group and mode of dumb-init.
-      dumb_init_owner: "root"
-      dumb_init_group: "root"
-      dumb_init_mode: "0755"
-      # Absolute path of where dumb-init should download to.
-      dumb_init_dest: "/usr/bin/dumb-init"
 
 - hosts: all
   remote_user: root
   tasks:
-    - name: ls -la /usr/bin/dumb-init
-      file:
-        path: "/usr/bin/dumb-init"
-        state: "file"
-        owner: "root"
-        group: "root"
-        mode: "0755"
-
     - name: dumb-init --help
       shell: |
         dumb-init --help
