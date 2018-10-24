@@ -1,27 +1,22 @@
-Ansible Role for dumb-init
-==========================
+# Ansible Role for dumb-init
 
-1.2.0 - TBC
------------
+## 1.2.0 - TBC
 
 ### Major Changes
 
--   Upgrade dumb-init to v1.2.2
--   Upgrade Ansible support to 2.6 or higher
--   Remove Ubuntu 14.04 support
--   Add Ubuntu 18.04 support
+  - Upgrade dumb-init to v1.2.2
+  - Upgrade Ansible support to 2.6 or higher
+  - Remove Ubuntu 14.04 support
+  - Add Ubuntu 18.04 support
 
-1.1.0 - 2017-11-23
-------------------
+## 1.1.0 - 2017-11-23
 
 ### Major Changes
 
--   Install dumb-init on Ubuntu 16.04/14.04 and CentOS 7/6 from source
--   Update test cases
+  - Install dumb-init on Ubuntu 16.04/14.04 and CentOS 7/6 from source
+  - Update test cases
 
-1.0.0 - 2017-09-25
-------------------
+## 1.0.0 - 2017-09-25
 
--   Ininitial release for Ansible 2.4
--   Support both Ubuntu 16.04/14.04 or RHEL/CentOS 7/6
-
+  - Ininitial release for Ansible 2.4
+  - Support both Ubuntu 16.04/14.04 or RHEL/CentOS 7/6
