@@ -4,10 +4,10 @@
 
 ### Major Changes
 
-  - Upgrade dumb-init to v1.2.2
   - Upgrade Ansible support to 2.6 or higher
-  - Remove Ubuntu 14.04 support
-  - Add Ubuntu 18.04 support
+  - Support both Ubuntu 16.04/18.04 and RHEL/CentOS 6/7
+  - Upgrade dumb-init to v1.2.2
+  - Update Travis CI test plan
 
 ## 1.1.0 - 2017-11-23
 
