@@ -31,7 +31,6 @@
   remote_user: root
   tasks:
     - name: dumb-init --help
-      shell: |
-        dumb-init --help
+      command: dumb-init --help
       register: dumb_init_help_result
       changed_when: dumb_init_help_result.rc != 0
