@@ -44,11 +44,10 @@
     loop_var: "loop_var"
   tags: dumb_init
 
-- name: download archive
-  get_url:
-    url: "{{ dumb_init_url }}"
-    dest: "{{ dumb_init_dest }}"
-    owner: "{{ dumb_init_owner }}"
-    group: "{{ dumb_init_group }}"
-    mode: "{{ dumb_init_mode }}"
+- name: pip install
+  pip:
+    name: "{{ item.name | default(None) or omit }}"
+    state: "{{ item.state | default(None) or omit }}"
+    version: "{{ item.version | default(None) or omit }}"
+  with_items: "{{ _pip }}"
   tags: dumb_init
