@@ -44,12 +44,35 @@
     loop_var: "loop_var"
   tags: dumb_init
 
-- name: pip install
-  pip:
-    name: "{{ item.name | default(None) or omit }}"
-    state: "{{ item.state | default(None) or omit }}"
-    version: "{{ item.version | default(None) or omit }}"
-  with_items: "{{ _pip }}"
+- name: prepare directories
+  file:
+    dest: "{{ item.dest }}"
+    owner: "{{ item.owner | default('root') }}"
+    group: "{{ item.group | default('root') }}"
+    mode: "{{ item.mode | default('0755') }}"
+    state: "{{ item.state | default('directory') }}"
+  with_items:
+    - { dest: "/usr/local/bin" }
+  tags: dumb_init
+
+- name: download archive
+  get_url:
+    url: "{{ dumb_init_download_url }}"
+    dest: "/usr/local/bin/dumb-init"
+    owner: "root"
+    group: "root"
+    mode: "0755"
   register: result
   until: result is succeeded
+  tags: dumb_init
+
+- name: prepare files
+  file:
+    dest: "{{ item.dest }}"
+    owner: "{{ item.owner | default('root') }}"
+    group: "{{ item.group | default('root') }}"
+    mode: "{{ item.mode | default('0644') }}"
+    state: "{{ item.state | default('file') }}"
+  with_items:
+    - { dest: "/usr/local/bin/dumb-init", mode: "0755" }
   tags: dumb_init
