@@ -1,10 +1,16 @@
 # Ansible Role for dumb-init
 
-## 2.4.0 - TBC
+## 2.5.0 - TBC
 
 ### Major Changes
 
-  - Add openSUSE Leap 42/15 support
+## 2.4.0 - 2019-03-03
+
+### Major Changes
+
+  - Rollback to direct download binary, skip python dependency
+  - Add openSUSE Leap 15 support
+  - Remove CentOS 6 support
 
 ## 2.3.0 - 2019-01-30
 
