@@ -16,3 +16,4 @@
 
 # URL for download dumb-init binary.
 dumb_init_download_url: "https://github.com/Yelp/dumb-init/releases/download/v1.2.2/dumb-init_1.2.2_amd64"
+dumb_init_download_checksum: "sha1:c16e45a301234c732af4c38be1e1000a2ce1cba8"
