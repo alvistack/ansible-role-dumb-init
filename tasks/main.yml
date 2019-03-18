@@ -58,6 +58,7 @@
 - name: download archive
   get_url:
     url: "{{ dumb_init_download_url }}"
+    checksum: "{{ dumb_init_download_checksum }}"
     dest: "/usr/local/bin/dumb-init"
     owner: "root"
     group: "root"
