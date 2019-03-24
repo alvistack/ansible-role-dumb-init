@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-  - Add checksum
+  - Pre-download archives with checksum
 
 ## 2.4.0 - 2019-03-03
 

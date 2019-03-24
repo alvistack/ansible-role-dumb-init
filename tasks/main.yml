@@ -57,12 +57,11 @@
 
 - name: download archive
   get_url:
-    url: "{{ dumb_init_download_url }}"
-    checksum: "{{ dumb_init_download_checksum }}"
-    dest: "/usr/local/bin/dumb-init"
-    owner: "root"
-    group: "root"
-    mode: "0755"
+    url: "{{ item.url }}"
+    dest: "{{ item.dest }}"
+    checksum: "{{ item.checksum }}"
+  with_items:
+    - "{{ dumb_init_download }}"
   register: result
   until: result is succeeded
   tags: dumb_init
