@@ -16,11 +16,13 @@
 
 - hosts: all
   remote_user: root
+  become: true
   roles:
     - role: dumb-init
 
 - hosts: all
   remote_user: root
+  become: true
   tasks:
     - name: dumb-init --help
       command: dumb-init --help
