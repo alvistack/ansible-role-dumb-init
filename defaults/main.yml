@@ -14,9 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# URL for download dumb-init binary.
+# dumb-init version.
 dumb_init_version: "1.2.2"
-dumb_init_download:
-  url: "https://github.com/Yelp/dumb-init/releases/download/v{{ dumb_init_version }}/dumb-init_{{ dumb_init_version }}_amd64"
-  dest: "/usr/local/bin/dumb-init"
-  checksum: "sha1:c16e45a301234c732af4c38be1e1000a2ce1cba8"
+
+# dumb-init download details.
+dumb_init_download: "{{ _dumb_init_download[dumb_init_version] }}"
