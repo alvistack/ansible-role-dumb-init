@@ -57,6 +57,7 @@
     state: "{{ item.state | default('directory') }}"
   loop:
     - { dest: "/usr/local/bin" }
+    - { dest: "{{ dumb_init_download.dest | dirname }}" }
   tags: dumb_init
 
 - name: download archive
@@ -68,6 +69,18 @@
     - "{{ dumb_init_download }}"
   register: result
   until: result is succeeded
+  tags: dumb_init
+
+- name: copy archive
+  copy:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    owner: "{{ item.owner | default('root') }}"
+    group: "{{ item.group | default('root') }}"
+    mode: "{{ item.mode | default('0644') }}"
+    remote_src: true
+  loop:
+    - { src: "{{ dumb_init_download.dest }}", dest: "/usr/local/bin/dumb-init", mode: "0755" }
   tags: dumb_init
 
 - name: prepare files
