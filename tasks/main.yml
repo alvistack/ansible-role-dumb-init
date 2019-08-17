@@ -67,8 +67,8 @@
     checksum: "{{ item.checksum }}"
   loop:
     - "{{ dumb_init_download }}"
-  register: result
-  until: result is succeeded
+  register: get_url_result
+  until: get_url_result is succeeded
   tags: dumb_init
 
 - name: copy archive
@@ -81,6 +81,7 @@
     remote_src: true
   loop:
     - { src: "{{ dumb_init_download.dest }}", dest: "/usr/local/bin/dumb-init", mode: "0755" }
+  when: get_url_result is changed
   tags: dumb_init
 
 - name: prepare files
