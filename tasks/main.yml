@@ -76,7 +76,6 @@
     set -o pipefail
     cd /usr/local/bin
     TMP_DIR="`mktemp -d`" && cp {{ dumb_init_download.dest }} $TMP_DIR/dumb-init && mv $TMP_DIR/dumb-init . && rm -rf $TMP_DIR
-    chown -Rf root:root dumb-init
   args:
     executable: "/bin/bash"
   when: get_url_result is changed
