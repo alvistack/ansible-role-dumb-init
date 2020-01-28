@@ -80,6 +80,8 @@
       && cp {{ dumb_init_download.dest }} $TMP_DIR/dumb-init \
       && mv $TMP_DIR/dumb-init . \
       && rm -rf $TMP_DIR
+    chown -Rf root:root /usr/local/bin/dumb-init
+    chmod 0755 /usr/local/bin/dumb-init
   args:
     executable: "/bin/bash"
   when: get_url_result is changed
