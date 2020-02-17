@@ -19,4 +19,4 @@
   become: true
   roles:
     - role: python
-    - role: dumb-init
+    - role: dumb_init
