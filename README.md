@@ -5,6 +5,8 @@
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-dumb_init.svg)](https://github.com/alvistack/ansible-role-dumb_init/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.dumb_init-blue.svg)](https://galaxy.ansible.com/alvistack/dumb_init)
 
+**[DEPRECATED] Sync with `docker --init`, use tini instead.**
+
 Ansible Role for Yelp dumb-init Installation.
 
 ## Requirements
